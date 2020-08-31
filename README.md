@@ -49,3 +49,11 @@ The repository is located in the `repository` folder. Inside the folder we have 
 - event:  
   Format: free string  
   The event name
+### File name
+Format for the file name should be  
+For non recurring holiday: `{country code ISO_3166-1_alpha-2}-{Year YYYY}-{Month MM}.csv`  
+For recurring holiday: `{country code ISO_3166-1_alpha-2}-recurring_events.csv`
+
+Example: 
+- `ID-2020-06.csv`
+- `ID-recurring-events.csv`
