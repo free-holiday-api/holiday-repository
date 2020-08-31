@@ -1,0 +1,5 @@
+date,category,repeatable,repeatable_year_period,event
+XXXX-12-30,MY,T,XXXX-XXXX,Holiday B
+XXXX-12-30,MY,T,2001-2006,Holiday C
+XXXX-12-30,MY,T,XXXX-1995,Holiday D
+XXXX-12-30,MY,T,1927-XXXX,Holiday E
