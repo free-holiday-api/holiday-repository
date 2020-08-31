@@ -13,11 +13,18 @@ We also plan to use github pages to serve in JSON format, so everyone can have a
   See: https://github.com/khasburrahman/csv-date-event-static-api-generator
 - (Todo) Github static API pages
 
+## Contribution Guide
+As of now the repo is only available for holiday repo contribution. 
+Please provide the source of truth (prefer government website / open wiki). 
+- Fork this repo
+- Clone the fork
+- Submit the PR! 
+
 ## Repository Format
 The repository is located in the `repository` folder. Inside the folder we have folders containing country code url ([ISO_3166-1_alpha-2 formatted](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)) to store each corresponding country holiday data. Each country folder would have folder defined below: 
 
 - recurring_events    
-  As the name suggests, this folder meant to store all the recurring holiday sorted by the most recent applicable time.  
+  As the name suggests, this folder meant to store all the recurring holiday (if possible) sorted by the most recent applicable time.  
 - Year (YYYY)  
   -  Month (MM)  
   Year and month folder are created for non recurring events. Month folder should be inside year folder. For example holiday that meant for special occasion. 
@@ -44,7 +51,8 @@ The repository is located in the `repository` folder. Inside the folder we have 
   For example:  
   `XXXX-2000`: from indefinite year to year 2000  
   `1990-2000`: from year 90\` to year 00\`  
-  `1990-2000,2005-XXXX`: from year 90\` to year 00\` then from year 05\` to indefinite year  
+  `1990-2000`: from year 90\` to year 00\`  
+  `2005-XXXX`: from year 05\` to indefinite year  
 
 - event:  
   Format: free string  
