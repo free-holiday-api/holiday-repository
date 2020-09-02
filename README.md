@@ -21,13 +21,12 @@ Please provide the source of truth (prefer government website / open wiki).
 - Submit the PR! 
 
 ## Repository Format
-The repository is located in the `repository` folder. Inside the folder we have folders containing country code url ([ISO_3166-1_alpha-2 formatted](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)) to store each corresponding country holiday data. Each country folder would have folder defined below: 
+The repository is located in the `repository` folder. Inside the folder we have folders containing country code url ([ISO_3166-1_alpha-2 formatted](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)) to store each corresponding country holiday data. Inside of country folder we have: 
 
-- recurring_events    
-  As the name suggests, this folder meant to store all the recurring holiday (if possible) sorted by the most recent applicable time.  
-- Year (YYYY)  
-  -  Month (MM)  
-  Year and month folder are created for non recurring events. Month folder should be inside year folder. For example holiday that meant for special occasion. 
+- recurring events file    
+  As the name suggests, this file meant to store all the recurring holiday in that year.  
+- Yearly file  
+  This would store yearly holiday that are not recurring / special occasion. 
     
 
 ## CSV File format
@@ -59,9 +58,9 @@ The repository is located in the `repository` folder. Inside the folder we have 
   The event name
 ### File name
 Format for the file name should be  
-For non recurring holiday: `{country code ISO_3166-1_alpha-2}-{Year YYYY}-{Month MM}.csv`  
+For non recurring holiday: `{country code ISO_3166-1_alpha-2}-{Year YYYY}.csv`  
 For recurring holiday: `{country code ISO_3166-1_alpha-2}-recurring_events.csv`
 
 Example: 
-- `ID-2020-06.csv`
+- `ID-2020.csv`
 - `ID-recurring-events.csv`
